@@ -1,0 +1,47 @@
+# fase 01 - bot basico
+
+## objetivo
+un bot que se conecta y responde "!ping" con "pong"
+
+## paso 1: copiar el index.js
+- copiar el index.js de esta carpeta a la raiz de tu proyecto (mi-bot/)
+
+## paso 2: revisar el .env
+- tiene que tener el TOKEN de la fase 00
+
+## paso 3: prender el bot
+  node index.js
+
+- si en la consola dice "conectado como ...", anda
+
+## paso 4: probar
+- escribir !ping en el servidor
+- el bot tiene que responder 🏓 pong!
+
+## conceptos
+- client: es el bot
+- intents: que eventos le pedis a discord. si falta uno, ese evento nunca llega
+- client.once: se ejecuta una sola vez
+- client.on: se ejecuta cada vez que pasa el evento
+- client.login: conecta el bot con el token
+
+## intents mas usados
+| intent         | para que                 | privilegiado |
+|----------------|--------------------------|--------------|
+| Guilds         | servidores, canales      | no           |
+| GuildMessages  | mensajes en servidores   | no           |
+| MessageContent | leer el texto            | si           |
+| GuildMembers   | entradas/salidas         | si           |
+
+los privilegiados se activan en el developer portal (fase 00, paso 3)
+
+## extra (opcional)
+en package.json, agregar dentro de "scripts":
+  "start": "node index.js"
+
+asi podes prender el bot con: npm start
+
+## errores comunes
+- "used disallowed intents": no activaste el intent en el developer portal
+- "an invalid token was provided": el token esta mal o no esta en el .env
+- el bot no responde: falta el intent MessageContent
