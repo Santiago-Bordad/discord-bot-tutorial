@@ -4,9 +4,6 @@ require('dotenv').config();
 // importamos lo que necesitamos de discord.js
 const { Client, GatewayIntentBits, Events } = require('discord.js');
 
-// creamos el bot y le decimos que eventos queremos recibir
-const { Client, GatewayIntentBits, Partials } = require('discord.js');
-
 const client = new Client({
     intents: [
         // --- servidores ---
@@ -62,8 +59,9 @@ client.on(Events.MessageCreate, async (message) => {
     if (message.author.bot) return;
 
     // si el mensaje dice !ping, respondemos
+    // si el mensaje dice !ping, respondemos con la latencia
     if (message.content === '!ping') {
-        const latencia = getLatency(message);
+        const latencia = Date.now() - message.createdTimestamp; // tiempo que tardo el mensaje en llegar
         await message.reply(`pong! (${latencia} ms)`);
     }
 });

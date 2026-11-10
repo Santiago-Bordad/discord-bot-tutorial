@@ -9,7 +9,7 @@
 ## paso 2: crear la aplicacion en discord
 - entrar a https://discord.com/developers/applications
 - new application -> ponerle nombre
-- ir a "bot" -> reset token -> copiar el token
+- ir a "bot" -> reset token -> copiar el token -> guardar en notas
 - ⚠️ el token nunca se sube a git
 
 ## paso 3: activar los intents

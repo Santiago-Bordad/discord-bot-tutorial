@@ -16,7 +16,7 @@ un bot que se conecta y responde "!ping" con "pong"
 
 ## paso 4: probar
 - escribir !ping en el servidor
-- el bot tiene que responder 🏓 pong!
+- el bot tiene que responder 🏓 pong! + latencia
 
 ## conceptos
 - client: es el bot
@@ -24,6 +24,7 @@ un bot que se conecta y responde "!ping" con "pong"
 - client.once: se ejecuta una sola vez
 - client.on: se ejecuta cada vez que pasa el evento
 - client.login: conecta el bot con el token
+- partials: dejan recibir eventos de cosas que no estan en cache (mensajes viejos, mds)
 
 ## intents mas usados
 | intent         | para que                 | privilegiado |
