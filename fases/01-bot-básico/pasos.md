@@ -16,7 +16,7 @@ un bot que se conecta y responde "!ping" con "pong"
 
 ## paso 4: probar
 - escribir !ping en el servidor
-- el bot tiene que responder 🏓 pong! + latencia
+- el bot tiene que responder 🏓 pong! + latencia 
 
 ## conceptos
 - client: es el bot
