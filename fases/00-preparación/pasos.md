@@ -28,8 +28,8 @@
   click derecho en el servidor -> copiar id
 
 ## paso 6: crear el proyecto
-  mkdir mi-bot
-  cd mi-bot
+  mkdir nombre-bot
+  cd nombre-bot
   npm init -y
   npm install discord.js dotenv
 
@@ -38,6 +38,6 @@
   CLIENT_ID=tu_client_id
   GUILD_ID=tu_guild_id
 
-- crear un .gitignore:
+- crear un .gitignore con:
   node_modules/
   .env
