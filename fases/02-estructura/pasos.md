@@ -25,8 +25,8 @@ mi-bot/
 
 ## paso 1: crear las carpetas
 ```bash
-mkdir handlers events commands
-mkdir commands/utilidades
+  mkdir handlers events commands
+  mkdir commands/utilidades
 ```
 
 ## paso 2: modificar el index.js
